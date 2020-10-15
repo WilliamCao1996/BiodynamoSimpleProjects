@@ -3,6 +3,8 @@
 
 At some concentrations it inhibits the proliferation of cancer cells, while at others it promotes the proliferation of cancer cells.
 
+You may set the concentration of 5-FU in the src/Five_FU.h file.
+
 This simulation starts with 10000 cancer cells.
 
 This simulation goes on for 72 timesteps, representing 72 hours.
