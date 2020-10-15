@@ -147,7 +147,7 @@ inline int Simulate(int argc, const char** argv) {
   auto set_param = [](Param* param) {
     param->bound_space_ = true;
     param->min_bound_ = -150;
-    param->max_bound_ = 150;  // cube of 100*100*100
+    param->max_bound_ = 150;  // cube of 300*300*300
   };
 
   Simulation simulation(argc, argv, set_param);
@@ -159,7 +159,7 @@ inline int Simulate(int argc, const char** argv) {
   double x_coord, y_coord, z_coord;
 
   for (size_t i = 0; i < nb_of_cells; ++i) {
-    // our modelling will be a cell cube of 200*200*200
+    // the simulation starts with a cell cube of 300*300*300
     // random double between 0 and 100
     x_coord = myrand->Uniform(param->min_bound_, param->max_bound_);
     y_coord = myrand->Uniform(param->min_bound_, param->max_bound_);
