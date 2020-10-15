@@ -1,0 +1,73 @@
+
+Drug name: docetaxel Drug concentration: 0.1 uM
+Initial cell numbers: 1000
+cell numbers after 24h of drug treatment: 967
+cell numbers after 72h of drug treatment: 919
+
+
+Drug name: docetaxel Drug concentration: 0.25 uM
+Initial cell numbers: 1000
+cell numbers after 24h of drug treatment: 942
+cell numbers after 72h of drug treatment: 841
+
+
+Drug name: docetaxel Drug concentration: 0.5 uM
+Initial cell numbers: 1000
+cell numbers after 24h of drug treatment: 936
+cell numbers after 72h of drug treatment: 823
+
+
+Drug name: docetaxel Drug concentration: 1 uM
+Initial cell numbers: 1000
+cell numbers after 24h of drug treatment: 930
+cell numbers after 72h of drug treatment: 813
+
+
+Drug name: docetaxel Drug concentration: 2.5 uM
+Initial cell numbers: 1000
+cell numbers after 24h of drug treatment: 940
+cell numbers after 72h of drug treatment: 831
+
+
+Drug name: docetaxel Drug concentration: 5 uM
+Initial cell numbers: 1000
+cell numbers after 24h of drug treatment: 967
+cell numbers after 72h of drug treatment: 884
+
+
+Drug name: docetaxel Drug concentration: 10 uM
+Initial cell numbers: 1000
+cell numbers after 24h of drug treatment: 977
+cell numbers after 72h of drug treatment: 1042
+
+
+Drug name: docetaxel Drug concentration: 25 uM
+Initial cell numbers: 1000
+cell numbers after 24h of drug treatment: 881
+cell numbers after 72h of drug treatment: 729
+
+
+Drug name: docetaxel Drug concentration: 50 uM
+Initial cell numbers: 1000
+cell numbers after 24h of drug treatment: 851
+cell numbers after 72h of drug treatment: 650
+
+
+Drug name: docetaxel Drug concentration: 100 uM
+Initial cell numbers: 1000
+cell numbers after 24h of drug treatment: 821
+cell numbers after 72h of drug treatment: 595
+
+
+Drug name: docetaxel Drug concentration: 250 uM
+Initial cell numbers: 1000
+cell numbers after 24h of drug treatment: 792
+cell numbers after 72h of drug treatment: 538
+
+
+Drug name: docetaxel Drug concentration: 500 uM
+Initial cell numbers: 1000
+cell numbers after 24h of drug treatment: 763
+cell numbers after 72h of drug treatment: 496
+
+
