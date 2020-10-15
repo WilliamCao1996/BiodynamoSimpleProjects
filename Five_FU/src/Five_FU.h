@@ -160,7 +160,7 @@ inline int Simulate(int argc, const char** argv) {
 
   for (size_t i = 0; i < nb_of_cells; ++i) {
     // the simulation starts with a cell cube of 300*300*300
-    // random double between 0 and 100
+    // random double between -150 and 150
     x_coord = myrand->Uniform(param->min_bound_, param->max_bound_);
     y_coord = myrand->Uniform(param->min_bound_, param->max_bound_);
     z_coord = myrand->Uniform(param->min_bound_, param->max_bound_);
