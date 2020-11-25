@@ -17,8 +17,8 @@ You may also adjust the migrate ability of cell in src/CellPosition.h file.
 
 Obviously, the stronger the cell's ability to migrate, the more dispersed the cells are in space.
 
-Change the random number seed before each experiment starts to make sure the results are random.
+This simulation contains random factor.
 
-If you keep using the same seeds, you'll get exactly the same result over and over again, which is also know as pseudo-random.
+If you run this simulation for multiple times, you will get different results.
 
 If you want to record the simulation result, you may use "script -f result.txt" command. You will get the output recorded in a txt file.
