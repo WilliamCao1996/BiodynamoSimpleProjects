@@ -13,8 +13,6 @@ You may adjust the probability of cell division in src/CancerCellNumbers.h file.
 
 Obviously, the greater the probability of cell division, the greater the total number of cells after the same time step.
 
-Change the random number seed before each experiment starts to make sure the results are random. 
+This simulation contains random factor.
 
-If you keep using the same seeds, you'll get exactly the same result over and over again, which is also know as pseudo-random.
-
-If you want to record the simulation result, you may use "script -f result.txt" command. You will get the output recorded in a txt file.
+If you run this simulation for multiple times, you will get different results.
