@@ -3,7 +3,7 @@ This is a simulation recording position of every cell in a tumor.
 
 The simulation starts with one single cancer cell.
 
-It grows and divides without limit. Eventually you get a lot of cancer cells and they form a Spherical tumor.
+It grows and divides without limit. Eventually you get a lot of cancer cells and they form a tumor.
 
 Each timestep, the cell moves a random distance (within a range you set) in a random direction.
 
