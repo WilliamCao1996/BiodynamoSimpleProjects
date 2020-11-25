@@ -15,6 +15,7 @@
 #define CELLNUMBER_H_
 
 #include "biodynamo.h"
+#include <ctime>
 
 namespace bdm {
 
@@ -79,13 +80,11 @@ struct GrowthModule : public BaseBiologyModule {
         cell->ChangeVolume(400);
 
       } else {
-        // s refers to seed for random numbers
-        // In order to get real random numbers, you need different seed for different simulation.
-        // Please change s before you run the simulation.
-        // Otherwise there will be Pseudo-random numbers, you will get the same result over and over again.
+        // Here below is a random seed link to the clock.
+        // The random result change with time.
+        // If you run this simulation for multiple times, you will get different result.
         auto* random = Simulation::GetActive()->GetRandom();
-        int s = 12;
-        random->SetSeed(s*t);
+        random->SetSeed(((unsigned int)std::time(0))*t);
 
         if (cell->GetCanDivide() && random->Uniform(0, 1) > 0.1) {
           cell->Divide();
@@ -95,8 +94,7 @@ struct GrowthModule : public BaseBiologyModule {
       }
     }
     // t is how many simulation timesteps passed.
-    // s*t in the SetSeed() means there will be a new seed gor each timestep.
-    // Both i and t must be variables to make sure you get random numbers.
+    // s in the SetSeed() means there will be a new seed for each timestep.
 
                 t++;
   }
