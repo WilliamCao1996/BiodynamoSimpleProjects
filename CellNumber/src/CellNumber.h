@@ -82,7 +82,7 @@ struct GrowthModule : public BaseBiologyModule {
       } else {
         // Here below is a random seed link to the clock.
         // The random result change with time.
-        // If you run this simulation for multiple times, you will get different result.
+        // If you run this simulation for multiple times, you will get different results.
         auto* random = Simulation::GetActive()->GetRandom();
         random->SetSeed(((unsigned int)std::time(0))*t);
 
@@ -94,7 +94,7 @@ struct GrowthModule : public BaseBiologyModule {
       }
     }
     // t is how many simulation timesteps passed.
-    // s in the SetSeed() means there will be a new seed for each timestep.
+    // t in the SetSeed() means there will be a new seed for each timestep.
 
                 t++;
   }
