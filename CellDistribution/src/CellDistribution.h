@@ -79,7 +79,7 @@ struct GrowthModule : public BaseBiologyModule {
            }
     }
     // t is how many simulation timesteps passed.
-    // s in the SetSeed() means there will be a new seed for each timestep.
+    // t in the SetSeed() means there will be a new seed for each timestep.
         t++;
   }
    private:
