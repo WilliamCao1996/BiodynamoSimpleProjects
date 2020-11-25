@@ -64,13 +64,11 @@ struct GrowthModule : public BaseBiologyModule {
         // The default here is 0.01 for timestep, not 1.
         cell->ChangeVolume(400);
         
-        // s refers to seed for random numbers
-        // In order to get real random numbers, you need different seed for different simulation.
-        // Please change s before you run the simulation.
-        // Otherwise there will be Pseudo-random numbers, you will get the same result over and over again.
-        int s = 5;
+        // Here below is a random seed link to the clock.
+        // The random result change with time.
+        // If you run this simulation for multiple times, you will get different results.
         
-        random->SetSeed(t*s);
+        random->SetSeed(((unsigned int)std::time(0))*t);
         // create an array of 3 random numbers between -2 and 2
         Double3 cell_movements{random->Uniform(-2, 2), random->Uniform(-2, 2), random->Uniform(-2, 2)};
         // update the cell mass location, ie move the cell
@@ -81,8 +79,7 @@ struct GrowthModule : public BaseBiologyModule {
            }
     }
     // t is how many simulation timesteps passed.
-    // s*t in the SetSeed() means there will be a new seed gor each timestep.
-    // Both i and t must be variables to make sure you get random numbers.
+    // s in the SetSeed() means there will be a new seed for each timestep.
         t++;
   }
    private:
